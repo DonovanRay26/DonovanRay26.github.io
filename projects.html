@@ -1,132 +1,82 @@
-<!DOCTYPE HTML>
-<!--
-	Solid State by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
+﻿<!DOCTYPE html>
+<html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EB435XMMWV"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-EB435XMMWV');
-    </script>
-    <title>Projects</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects | Donovan Ray</title>
+  <link rel="stylesheet" href="assets/css/custom.css" />
 </head>
-<body class="is-preload">
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">Donovan Ray</a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="experience.html">Experience</a>
+        <a class="active" href="projects.html">Projects</a>
+        <a href="skills.html">Skills</a>
+        <a href="education.html">Education</a>
+        <a href="leadership.html">Leadership</a>
+      </nav>
+    </div>
+  </header>
 
-<!-- Page Wrapper -->
-<div id="page-wrapper">
+  <main class="page">
+    <h1 class="section-title" style="margin-top:0;">Selected Projects</h1>
 
-    <!-- Header -->
-    <header id="header">
-        <h1><a href="index.html">Projects</a></h1>
-        <nav>
-            <a href="#menu">Menu</a>
-        </nav>
-    </header>
-
-    <!-- Menu -->
-    <nav id="menu">
-        <div class="inner">
-            <h2>Menu</h2>
-            <ul class="links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="experience.html">Experience</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="skills.html">Technical Skills</a></li>
-                <li><a href="education.html">Education</a></li>
-                <li><a href="leadership.html">Leadership</a></li>
-            </ul>
-            <a href="#" class="close">Close</a>
-        </div>
-    </nav>
-
-    <!-- Wrapper -->
-    <section id="wrapper">
-        <header>
-            <div class="inner">
-                <h2>Projects</h2>
-            </div>
-        </header>
-
-        <!-- Content -->
-        <div class="wrapper">
-            <div class="inner">
-
-                <h3 class="major">Cointegration-Based Pairs/Mean Reversion Algorithmic Trading</h3>
-                <p><strong>Jun. 2025 - Jul. 2025 | GitHub Repository</strong></p>
-                <p>Utilized ADF, Engle-Granger, and Hurst exponent testing to identify strong cointegrating pairs relationships, applied Kalman filtering for dynamic hedge ratio and spread estimation.</p>
-                <p>Implemented a public-facing EWA/EWC ETF strategy inspired by Ernest Chan's Algorithmic Trading, achieving a Sharpe Ratio of 2.46, 7.01% annualized return, and 1.4% maximum drawdown with borrow fees, transaction costs, and slippage considered.</p>
-                <p>Engineered a low latency (5.63ms end-to-end) trading system utilizing Python for data ingestion and signal generation, C++ for order execution via Interactive Broker's TWS, and ZeroMQ for interprocess communication.</p>
-
-                <h3 class="major">DRW Crypto Market Prediction Competition</h3>
-                <p><strong>Jun. 2025 - Jul. 2025 | GitHub Repository</strong></p>
-                <p>Developed feature selection and engineering pipeline filtering features down to less than 25% of original count, selecting for Mutual Information, Pearson Correlation, Spearman Correlation, ANOVA F-Statistic, and Lasso regression with weighted importances.</p>
-                <p>Engineered an ensemble model with LightGBM, CatBoost, TabNet, Ridge Regression, and Extra Trees with adaptive weighting based on validation performance. Achieved a Pearson Correlation of 0.092, placing in the top 5.4% of submissions.</p>
-
-                <h3 class="major">Custom KNN Regressor for Kaggle Housing Prices - Advanced Regression Techniques</h3>
-                <p><strong>May 2025 - Jun. 2025 | GitHub Repository</strong></p>
-                <p>Engineered scalable preprocessing pipeline, performed feature selection via Spearman correlation, imputed, scaled and one-hot encoded numerical and categorical data respectively, and reduced dimensionality through PCA for high-variance control to achieve a R² = 0.89 on competition test data.</p>
-
-                <h3 class="major">Real Asset Portfolio Management</h3>
-                <p><strong>Jan. 2024 - Present</strong></p>
-                <p>Actively managing a personal investment portfolio with a heavy focus on single ticker TMT stocks for a 30.74% rate of return in 2024.</p>
-
-                <h3 class="major">Automated, ML/AI-powered, Quantitative/Algorithmic Trade Execution System</h3>
-                <p><strong>2023 - 2024 | GitHub Repository</strong></p>
-                <p>I utilized the Interactive Brokers API (ibapi) and the Interactive Brokers Trading Workstation (TWS) to make a system that trained LSTM models through TensorFlow on historical market data.</p>
-                <p>I utilized ibapi and the TWS to make a real-time trade execution system that feeds live market data into the tensorflow .keras model and executes trades with trading logic built around the LSTM model.</p>
-                <p>Measured success through profitability on Interactive Brokers Paper Trading account which achieved ~10% profit during operation.</p>
-
-                <h3 class="major">Fraternity Rush App</h3>
-                <p><strong>2023 - 2024 | GitHub Repository</strong></p>
-                <p>I worked with a teammate to develop a CRUD app to help streamline the fraternity rush process. This includes a UI for users to sign into and answer questions, a database using hibernate to store user information, and an admin portal to access information. This will be utilized during the fall and spring rush for our fraternity.</p>
-                <p>My role was to design, build, and implement the UI. This included using Scene Builder, JavaFX, and OpenCV with a SQLite database. I then implemented this in an MVC-style design pattern.</p>
-
-                <h3 class="major">CMaps React App</h3>
-                <p><strong>2023 - 2024 | GitHub Repository</strong></p>
-                <p>I collaborated with a team to develop a react version of the cmaps.tech web-app. The CMaps app helps college students at the University of Virginia to better connect with their community through enabling student organizations to promote events with geo-locations using a GoogleMaps API.</p>
-                <p>My role was to help develop, implement, and test a Django RESTful Framework which interfaces with a PostgreSQL database and the React-based frontend of the app.</p>
-
-            </div>
-        </div>
-
+    <section class="card">
+      <h3>Cointegration-Based Pairs/Mean Reversion Algorithmic Trading</h3>
+      <p class="date">Jun 2025 - Jul 2025</p>
+      <ul class="list-clean">
+        <li>Applied ADF, Engle-Granger, and Hurst exponent testing to identify robust cointegrated pairs.</li>
+        <li>Used Kalman filtering for dynamic hedge ratio and spread estimation in a public-facing EWA/EWC strategy inspired by Ernest Chan.</li>
+        <li>Recorded a 2.46 Sharpe Ratio, 7.01% annualized return, and 1.4% maximum drawdown including borrow fees, transaction costs, and slippage.</li>
+        <li>Engineered a low-latency architecture with Python data/signal workflows, C++ order execution via IBKR TWS, and ZeroMQ messaging with 5.63ms end-to-end latency.</li>
+      </ul>
+      <p><a href="https://github.com/DonovanRay26/AlgoTrading_TWSCPP" target="_blank" rel="noopener noreferrer">View repository</a></p>
     </section>
 
-    <!-- Footer -->
-    <section id="footer">
-        <div class="inner">
-            <h2 class="major">Contact Me</h2>
-            <p>Please feel free to contact me at any of the information listed below.</p>
-
-            <ul class="contact">
-                <li class="icon solid fa-phone">(469) 571-9138</li>
-                <li class="icon solid fa-envelope">DonovanJRay26@gmail.com</a></li>
-                <li class="icon brands fa-linkedin"><a href="https://www.linkedin.com/in/donovan-ray-8521b428b/">LinkedIn</a></li>
-                <li class="icon brands fa-github"><a href="https://github.com/DonovanRay26">GitHub</a> </li>
-            </ul>
-        </div>
+    <section class="card" style="margin-top:1rem;">
+      <h3>DRW Crypto Market Prediction Competition</h3>
+      <p class="date">Jun 2025 - Jul 2025</p>
+      <ul class="list-clean">
+        <li>Built feature engineering and selection pipeline to reduce high-dimensional inputs to under 25% of the original feature count.</li>
+        <li>Weighted selection criteria across mutual information, Pearson/Spearman correlations, ANOVA F-statistics, and Lasso relevance.</li>
+        <li>Developed an adaptive ensemble using LightGBM, CatBoost, TabNet, Ridge, and Extra Trees.</li>
+        <li>Achieved Pearson correlation of 0.092 and placed in the top 5.4% of competition submissions.</li>
+      </ul>
+      <p><a href="https://github.com/DonovanRay26/DRWCryptoTrading" target="_blank" rel="noopener noreferrer">View repository</a></p>
     </section>
 
-</div>
+    <section class="card" style="margin-top:1rem;">
+      <h3>Custom KNN Regressor for Kaggle Housing Prices (Advanced Regression Techniques)</h3>
+      <p class="date">May 2025 - Jun 2025</p>
+      <ul class="list-clean">
+        <li>Engineered a scalable preprocessing workflow for mixed numerical and categorical housing data.</li>
+        <li>Performed feature selection using Spearman correlation, then imputed, scaled, and one-hot encoded inputs.</li>
+        <li>Applied PCA for variance control and dimensionality reduction to stabilize model performance.</li>
+        <li>Reached R^2 = 0.89 on competition test data.</li>
+      </ul>
+      <p><a href="https://github.com/DonovanRay26/KaggleHousingCompetition" target="_blank" rel="noopener noreferrer">View repository</a></p>
+    </section>
 
-<!-- Scripts -->
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/jquery.scrollex.min.js"></script>
-<script src="assets/js/browser.min.js"></script>
-<script src="assets/js/breakpoints.min.js"></script>
-<script src="assets/js/util.js"></script>
-<script src="assets/js/main.js"></script>
+    <section class="card" style="margin-top:1rem;">
+      <h3>Real Asset Portfolio Management</h3>
+      <p class="date">Jan 2024 - Present</p>
+      <ul class="list-clean">
+        <li>Actively manage a personal portfolio focused on single-ticker TMT equities.</li>
+        <li>Tracked a 30.74% return during 2024.</li>
+      </ul>
+    </section>
 
+    <footer class="site-footer">
+      <div class="contact">
+        <span>(469) 571-9138</span>
+        <a href="mailto:donovanjray26@gmail.com">donovanjray26@gmail.com</a>
+        <a href="https://www.linkedin.com/in/donovan-ray-8521b428b/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+    </footer>
+  </main>
 </body>
 </html>
